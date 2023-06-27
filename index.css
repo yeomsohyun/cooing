@@ -1,0 +1,432 @@
+@charset "utf-8";
+
+/*고성금강누리체*/
+@font-face {
+    font-family: 'GOSEONGGEUMGANGNURI';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2205@1.0/GOSEONGGEUMGANGNURI.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img,
+video,
+iframe {
+    vertical-align: middle;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+body {
+    font-size: 15px;
+    font-family: 'SUITE';
+    color: #302217;
+    line-height: 20px;
+    min-width: 1450px
+}
+
+/*header*/
+#header {
+    position: absolute;
+    width: 100%;
+    background: url(./images/header_bg.png) center top;
+    height: 382px;
+    top: 0;
+    left: 0;
+}
+
+.bg {
+    position: absolute;
+    z-index: 50;
+    display: none;
+}
+
+#logo {
+    width: 1320px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 75px;
+}
+
+.sns ul {
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+}
+
+.sns ul li {
+    border: 3px solid #def2fb;
+    border-radius: 50px;
+    padding: 10px;
+    margin-right: 10px;
+}
+
+.sns ul li:hover {
+    background-color: #f491a5;
+}
+
+
+.you a img {
+    padding: 6px 0;
+}
+
+.main_logo {
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.login ul {
+    display: flex;
+    padding-right: 15px;
+    padding-top: 25px;
+}
+
+.login {
+    font-family: 'GOSEONGGEUMGANGNURI';
+    font-size: 20px;
+    color: #f9a158;
+}
+
+.sub {
+    font-family: 'GOSEONGGEUMGANGNURI';
+    font-size: 30px;
+    color: #f491a5;
+    padding-top: 100px;
+}
+
+.sub ol {
+    display: flex;
+    justify-content: center;
+
+}
+
+.sub ol li {
+    padding: 0 20px;
+}
+
+.sub ol li:hover {
+    color: #92d8f1;
+}
+
+.video {
+    margin-top: 300px;
+}
+
+/*Signature_Menu*/
+#Signature_Menu {
+    padding-top: 100px;
+}
+
+.Signature_Menu_text {
+    text-align: center;
+    font-family: 'GOSEONGGEUMGANGNURI';
+    font-size: 40px;
+    color: #f9a158;
+    padding-bottom: 100px;
+}
+
+.Signature {
+    width: 25%;
+    position: relative;
+    z-index: 10;
+}
+
+.Signature img {
+    width: 100%;
+}
+
+.Signature_pink {
+    width: 75%;
+    text-align: center;
+    overflow: hidden;
+}
+
+.Signature_pink img {
+    max-width: 100%;
+}
+
+.pink {
+    overflow: visible;
+    width: 85%;
+    margin: 0;
+}
+
+.parfait {
+    display: flex;
+    align-items: center;
+}
+
+
+
+/*menu*/
+#menu {
+    width: 1320px;
+    margin: 0 auto;
+}
+
+.title {
+    text-align: center;
+    font-family: 'GOSEONGGEUMGANGNURI';
+    font-size: 40px;
+    color: #f9a158;
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+.menu_box ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu_box ul li p {
+    text-align: center;
+    font-size: 20px;
+    padding-top: 15px;
+}
+
+.menu_box img:hover {
+    transform: scale(1.1, 1.1);
+}
+
+/*brand_story*/
+#brand_text {
+    padding-top: 100px;
+    padding-bottom: 50px;
+    text-align: center;
+    font-family: 'GOSEONGGEUMGANGNURI';
+    font-size: 40px;
+    color: #f9a158;
+}
+
+#brand_story {
+    position: relative;
+    height: 900px;
+    overflow: hidden;
+}
+
+.brand h4 {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 50;
+}
+
+
+.video2 {
+    position: absolute;
+    top: 50px;
+    right: 50%;
+    transform: translateX(600px);
+}
+
+.story_text {
+    text-align: center;
+    position: absolute;
+    top: 240px;
+    left: 50%;
+    transform: translateX(-600px);
+    z-index: 100;
+    font-size: 20px;
+    line-height: 35px;
+}
+
+.story_text img {
+    padding-bottom: 50px;
+}
+
+/*animated_movie*/
+#animated_movie {
+    margin-top: 90px;
+    background: url(./images/long_yellow.png) no-repeat top;
+    height: 168px;
+}
+
+#slide {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    padding-top: 45px;
+}
+
+/*width를 본인에 맞게 수정하여 사용하세요! --아래 3개*/
+.slide_inner {
+    width: 3600px;
+    /*ul길이의 두배!*/
+    display: flex;
+    animation: rotate 10s linear infinite;
+}
+
+.slide_inner ul {
+    display: flex;
+    width: 1800px;
+    /*li크기를 전부합한것보다 더 여유있게.*/
+    justify-content: space-around;
+}
+
+.slide_inner ul li {
+    width: 198px;
+}
+
+/*width를 본인에 맞게 수정하여 사용하세요!*/
+
+.slide_inner ul li:nth-child(2) {
+    padding-left: 30px;
+}
+
+.slide_inner ul li:nth-child(3) {
+    padding-left: 30px;
+}
+
+.slide_inner ul li:nth-child(4) {
+    padding-left: 30px;
+}
+
+.slide_inner ul li:nth-child(5) {
+    padding-left: 30px;
+}
+
+.slide_inner ul li img {
+    width: 100%;
+}
+
+/*슬라이드에 호버시 애니메이션이 멈추게 만듦*/
+
+#slide p {
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: rotate(-50%);
+    cursor: pointer;
+}
+
+@keyframes rotate {
+    0% {
+        margin-left: 0;
+    }
+
+    100% {
+        margin-left: -1800px;
+        /*slide_inner의 ul길이와 동일하게 - 설정합니다!*/
+    }
+}
+
+
+/*garden_trend*/
+#garden_trend {
+    text-align: center;
+    padding-top: 100px;
+
+}
+
+.garden_text .color {
+    font-family: 'GOSEONGGEUMGANGNURI';
+    font-size: 40px;
+    color: #f9a158;
+    padding-bottom: 50px;
+}
+
+.garden_text p {
+    font-size: 20px;
+    line-height: 35px;
+    padding-bottom: 90px;
+}
+
+/*store_Interior*/
+#store {
+    display: flex;
+    width: 1320px;
+    margin: 0 auto;
+    padding-bottom: 155px;
+    padding-top: 50px;
+}
+
+#store_title {
+    font-family: 'GOSEONGGEUMGANGNURI';
+    font-size: 40px;
+    color: #f9a158;
+    padding-bottom: 50px;
+    text-align: center;
+    padding-top: 100px;
+}
+
+#store_Interior {
+    width: 660px;
+}
+
+.store_img {
+    border-radius: 1000px 1000px 0 0;
+    overflow: hidden;
+}
+
+.cooing {
+    font-family: 'GOSEONGGEUMGANGNURI';
+    font-size: 25px;
+    padding-bottom: 10px;
+}
+
+.busan {
+    font-size: 18px;
+    padding-bottom: 20px;
+}
+
+.store_text {
+    padding-top: 320px;
+    padding-left: 100px;
+}
+
+/*footer*/
+#footer {
+    background: url(./images/footer_bg.png) no-repeat top center;
+    height: 315px;
+}
+
+.footer_inner {
+    padding-top: 150px;
+    display: flex;
+    width: 1320px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.logo_text {
+    display: flex;
+}
+
+.logo_text h3 {
+    padding-right: 50px;
+    padding-left: 30px;
+}
+
+.text {
+    display: flex;
+    line-height: 40px;
+    padding-right: 30px;
+}
+
+.text_box1 {
+    padding-right: 50px;
+}
+
+/*top_button*/
+.top_button {
+    position: fixed;
+    right: 100px;
+    bottom: 80px;
+    z-index: 50;
+}
